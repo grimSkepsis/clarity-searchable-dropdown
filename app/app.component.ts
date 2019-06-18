@@ -27,7 +27,7 @@ export class AppComponent {
   }
 
   public get filteredOptions(): Array<string> {
-    return this.optionsArray.filter(option => option.includes(this.filterString));
+    return this.optionsArray.filter(option => option.toLowerCase().includes(this.filterString.toLowerCase()));
   }
 
 }
