@@ -1,0 +1,15 @@
+<div class="main-container">
+<clr-dropdown [clrCloseMenuOnItemClick]="false">
+    <button type="button" class="btn btn-outline-primary" clrDropdownTrigger>
+        Dropdown
+        <clr-icon shape="caret down"></clr-icon>
+    </button>
+    <clr-dropdown-menu *clrIfOpen>
+
+
+        <label class="dropdown-header">Dropdown header</label>
+        <input clrInput placeholder="My input" name="input" [(ngModel)]="filterString" />
+        <button type="button" clrDropdownItem *ngFor="let option of filteredOptions">{{option}}</button>
+    </clr-dropdown-menu>
+</clr-dropdown> 
+</div>
