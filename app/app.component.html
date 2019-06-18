@@ -9,7 +9,9 @@
 
         <label class="dropdown-header">Dropdown header</label>
         <input clrInput placeholder="My input" name="input" [(ngModel)]="filterString" />
-        <button type="button" clrDropdownItem *ngFor="let option of filteredOptions">{{option}}</button>
+        <div class="option-container">
+          <button type="button" clrDropdownItem *ngFor="let option of filteredOptions">{{option}}</button>
+        </div>
     </clr-dropdown-menu>
 </clr-dropdown> 
 </div>
