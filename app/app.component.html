@@ -14,4 +14,16 @@
         </div>
     </clr-dropdown-menu>
 </clr-dropdown> 
+<clr-dropdown [clrCloseMenuOnItemClick]="false">
+    <button type="button" class="btn btn-outline-primary" clrDropdownTrigger>
+        Filters-no header
+        <clr-icon shape="caret down"></clr-icon>
+    </button>
+    <clr-dropdown-menu *clrIfOpen>
+        <input clrInput placeholder="Search..." name="input" [(ngModel)]="filterString" />
+        <div class="option-container">
+          <button type="button" clrDropdownItem *ngFor="let option of filteredOptions">{{option}}</button>
+        </div>
+    </clr-dropdown-menu>
+</clr-dropdown> 
 </div>

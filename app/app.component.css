@@ -10,3 +10,7 @@
   max-height: 200px;
   overflow-y: auto;
 }
+
+clr-dropdown-menu::ng-deep clr-input-container {
+  margin-top: 0.2rem;
+}
