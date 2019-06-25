@@ -14,3 +14,11 @@
 clr-dropdown-menu::ng-deep clr-input-container {
   margin-top: 0.2rem;
 }
+
+.select-container {
+  display: flex;
+}
+
+.select-container .clr-form-control {
+  margin-top: 0;
+}
